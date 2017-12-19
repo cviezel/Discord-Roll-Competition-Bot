@@ -64,6 +64,12 @@ bot.on('message', function(message) {
         roll_array.splice(0,roll_array.length);
         count = 0;
     }
+    if (mes == '!help')
+    {
+        message.channel.send('!enter to enter the draw.');
+        message.channel.send('!roll to determine the victor.');
+        message.channel.send('!clear to reset the entries.');
+    }
 });
 
 
