@@ -36,9 +36,11 @@ bot.on('message', function(message) {
             message.channel.send('Nobody has entered yet!');
         }
         else {
+        /*
         message.channel.send('3');
         message.channel.send('2');
         message.channel.send('1');
+        */
         for (var i = 0; i < roll_array.length; i++) {
             message.channel.send(user_array[i] + ' rolled ' + roll_array[i]);
         }
@@ -49,7 +51,7 @@ bot.on('message', function(message) {
                 }
         }
         message.channel.send('------------------------------');
-        message.channel.send(user_array[max] + ' won with ' + roll_array[max] + '!');
+        message.channel.send(user_array[max] + ' won!');
         user_array.splice(0,user_array.length);
         roll_array.splice(0,roll_array.length);
         count = 0;
