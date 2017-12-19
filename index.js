@@ -9,7 +9,7 @@ var cheatflag = 0;
 bot.on('message', function(message) {
     // Don't forget to log the message!
     var mes = message.content.split(" ");
-    if(mes == '!enter')
+    if(mes == '!rollenter')
     {
         cheatflag = 0;
         var person = message.author.username;
@@ -29,7 +29,7 @@ bot.on('message', function(message) {
             roll_array.push(num);
         }
     }
-    if(mes == '!startroll')
+    if(mes == '!rollstart')
     {
         if (count == 0)
         {
@@ -57,7 +57,7 @@ bot.on('message', function(message) {
         count = 0;
     }
 }
-    if (mes == '!clear')
+    if (mes == '!rollclear')
     {
         message.channel.send('All entries have been cleared.');
         user_array.splice(0,user_array.length);
@@ -66,9 +66,9 @@ bot.on('message', function(message) {
     }
     if (mes == '!help')
     {
-        message.channel.send('!enter to enter the draw.');
-        message.channel.send('!startroll to determine the victor.');
-        message.channel.send('!clear to reset the entries.');
+        message.channel.send('!rollenter to enter the draw.');
+        message.channel.send('!rollstart to determine the victor.');
+        message.channel.send('!rollclear to reset the entries.');
     }
 });
 

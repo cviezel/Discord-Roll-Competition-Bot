@@ -4,8 +4,8 @@ Discord bot allowing users to roll a number between 1 and 1000 to fairly settle 
 
 
 
-!enter to enter the draw.
+!rollenter to enter the draw.
 
-!startroll to determine the victor.
+!rollstart to determine the victor.
 
-!clear to reset the entries.
+!rollclear to reset the entries.
