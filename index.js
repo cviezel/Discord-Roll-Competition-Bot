@@ -29,7 +29,7 @@ bot.on('message', function(message) {
             roll_array.push(num);
         }
     }
-    if(mes == '!roll')
+    if(mes == '!startroll')
     {
         if (count == 0)
         {
@@ -67,7 +67,7 @@ bot.on('message', function(message) {
     if (mes == '!help')
     {
         message.channel.send('!enter to enter the draw.');
-        message.channel.send('!roll to determine the victor.');
+        message.channel.send('!startroll to determine the victor.');
         message.channel.send('!clear to reset the entries.');
     }
 });
