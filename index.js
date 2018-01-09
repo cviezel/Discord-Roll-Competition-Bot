@@ -6,6 +6,9 @@ var roll_array = [];
 var num;
 var cheatflag = 0;
 
+var info = require('./info.json');
+
+
 bot.on('message', function(message) {
     // Don't forget to log the message!
     var mes = message.content.split(" ");
@@ -77,4 +80,4 @@ bot.on('message', function(message) {
 
 
 
-bot.login('MzkyNzAzNDM3MTE4MTExNzU1.DRrFFw.3lcYYBosMwgpfOw1fmGWZsKMjOc');
+bot.login(info.id);
